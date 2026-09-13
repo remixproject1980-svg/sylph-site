@@ -188,6 +188,7 @@
   .artist-tab:hover{color:var(--ink); border-color:var(--m-color);}
   .artist-tab.active{background:var(--m-color); border-color:var(--m-color); color:var(--void);}
   .discography{max-width:820px; margin:0 auto; display:flex; flex-direction:column; gap:14px;}
+  .discography[hidden]{display:none !important;}
   .song-card{
     background:var(--panel); border:1px solid var(--line); border-radius:16px;
     padding:24px clamp(18px,4vw,32px); position:relative; overflow:hidden;
@@ -226,6 +227,7 @@
   .track .player audio{height:36px;}
 
   .tiktok-grid{max-width:1000px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fill, minmax(260px,1fr)); gap:26px;}
+  .tiktok-grid[hidden]{display:none !important;}
   .tiktok-card{background:var(--panel); border:1px solid var(--line); border-radius:16px; overflow:hidden; position:relative;}
   .tiktok-card::before{
     content:''; position:absolute; top:0; left:0; right:0; height:2px; z-index:2;
@@ -423,7 +425,6 @@
       <button class="artist-tab active" data-artist="sylphy" style="--m-color:var(--sky)">Sylphy</button>
       <button class="artist-tab" data-artist="sylia" style="--m-color:var(--storm)">Sylia</button>
       <button class="artist-tab" data-artist="sylvia" style="--m-color:var(--wind)">Sylvia</button>
-      <button class="artist-tab" data-artist="sylph" style="--m-color:var(--glow)">Sylph (Unit)</button>
       <button class="artist-tab" data-artist="sylph" style="--m-color:var(--glow)">Sylph（3人）</button>
     </div>
 
